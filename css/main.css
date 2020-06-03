@@ -39,6 +39,26 @@ body {
   padding-right: 15px;
 }
 
+/* невидимый */
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ШАПКА */
+
+/* page-header */
+
+.page-header {
+  background-color: #fff;
+}
+
 /*logo*/
 
 .logo {
@@ -60,10 +80,13 @@ body {
   color: #2196f3;
 }
 
-/* page-header */
+.mail {
+  fill: #afb1b8;
+}
 
-.page-header {
-  background-color: #fff;
+.mail:hover,
+.mail:focus {
+  fill: #2196f3;
 }
 
 /* main nav */
@@ -72,7 +95,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 200px;
 }
 
 /* Site-nav */
@@ -138,6 +160,28 @@ body {
 
 /* Hero */
 
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 46px;
@@ -163,7 +207,8 @@ body {
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  margin-bottom: 200px;
+  border: transparent;
+
   text-decoration: none;
 
   color: #fff;
@@ -231,6 +276,20 @@ body {
   text-transform: uppercase;
 }
 
+.featureses {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.featureses-svg {
+  margin: auto;
+}
+
 /* Examples */
 
 .applications-list {
@@ -288,6 +347,24 @@ body {
   justify-content: space-evenly;
 }
 
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social:hover,
+.social:focus {
+  background-color: #2196f3;
+}
+
+.social-svg {
+  fill: #afb1b8;
+}
+
 /* clients */
 
 .clients-list {
@@ -317,6 +394,23 @@ body {
 
   font-size: 14px;
   line-height: 1.71;
+}
+
+.link-clients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-clients:hover,
+.link-clients:focus {
+  background-color: #2196f3;
+}
+
+.clients-svg {
+  fill: #afb1b8;
 }
 
 /* footer */
@@ -378,6 +472,15 @@ body {
   justify-content: center;
 
   color: rgba(255, 255, 255, 0.4);
+}
+
+.social-svg .instagram {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* классы для портфолио */
