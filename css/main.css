@@ -354,15 +354,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
 
 .social:hover,
 .social:focus {
+  color: #fff;
   background-color: #2196f3;
 }
 
 .social-svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* clients */
@@ -381,6 +383,11 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+  border: 1px solid #2196f3;
 }
 
 .clients-list .item + .item {
@@ -402,15 +409,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
 
 .link-clients:hover,
 .link-clients:focus {
-  background-color: #2196f3;
+  color: #2196f3;
 }
 
 .clients-svg {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /* footer */
@@ -447,6 +455,15 @@ body {
   margin-left: 10px;
 }
 
+.network .social {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.network .social:hover,
+.network .social:focus {
+  background-color: #2196f3;
+}
+
 .studio {
   color: #fff;
 }
@@ -472,15 +489,6 @@ body {
   justify-content: center;
 
   color: rgba(255, 255, 255, 0.4);
-}
-
-.social-svg .instagram {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* классы для портфолио */
@@ -530,6 +538,9 @@ body {
 .element {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
 }
 
 .element:nth-child(3n) {
