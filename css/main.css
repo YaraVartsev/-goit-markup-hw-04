@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fff;
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -130,7 +130,6 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
-  border-bottom: 4px solid #2196f3;
 }
 
 .site-nav .current {
@@ -179,7 +178,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -230,7 +228,11 @@ body {
 /* Section */
 
 .section {
-  margin-bottom: 94px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .section-title {
@@ -250,6 +252,9 @@ body {
 }
 
 /* Features */
+.section-features {
+  padding-bottom: 0;
+}
 
 .feature-list {
   display: flex;
@@ -312,6 +317,10 @@ body {
 }
 
 /* Team */
+
+.section-team {
+  background-color: #f5f4fa;
+}
 
 .team-list {
   display: flex;
@@ -427,12 +436,15 @@ body {
   background-color: #2f303a;
 }
 
-.footer-container {
+.footer-border {
   display: flex;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-info {
   margin-top: 48px;
+  width: 231px;
 }
 
 .footer-info .logo {
@@ -464,6 +476,32 @@ body {
   background-color: #2196f3;
 }
 
+.footer-subscribe {
+  margin-top: 56px;
+  margin-left: 94px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 21px;
+}
+
+.subscribe-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 12px 18px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.white {
+  color: #fff;
+}
+
 .studio {
   color: #fff;
 }
@@ -482,6 +520,8 @@ body {
 .contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .sign {
