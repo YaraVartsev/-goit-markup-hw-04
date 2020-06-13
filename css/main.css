@@ -9,9 +9,9 @@
 /* вторичный цвет фона */
 
 :root {
-  --primary-text-color: color #212121;
-  --title-text-color: color #757575;
-  --accent-color: color #2196f3;
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
 }
 
 body {
@@ -72,21 +72,16 @@ body {
 }
 
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo:hover,
 .logo:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mail {
-  fill: #afb1b8;
-}
-
-.mail:hover,
-.mail:focus {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 /* main nav */
@@ -129,11 +124,11 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Contacts */
@@ -147,14 +142,31 @@ body {
   margin-left: 30px;
 }
 
-.contacts-nav .contact {
-  color: #757575;
-  text-decoration: none;
+.contacts-nav .item {
+  color: var(--title-text-color);
 }
 
-.contacts-nav .contact:hover,
-.contacts-nav .contact:focus {
-  color: #2196f3;
+.contacts-nav .item:hover,
+.contacts-nav .item:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  color: currentColor;
+  text-decoration: none;
 }
 
 /* Hero */
@@ -210,13 +222,15 @@ body {
   text-decoration: none;
 
   color: #fff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -328,7 +342,7 @@ body {
 }
 
 .team-list > li {
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -369,7 +383,7 @@ body {
 .social:hover,
 .social:focus {
   color: #fff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .social-svg {
@@ -396,7 +410,7 @@ body {
 
 .clients-list .item:hover,
 .clients-list .item:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
 }
 
 .clients-list .item + .item {
@@ -406,7 +420,7 @@ body {
 .paragraph {
   margin-top: 0;
   margin-bottom: 0;
-  color: #757575;
+  color: var(--title-text-color);
 
   font-size: 14px;
   line-height: 1.71;
@@ -423,7 +437,7 @@ body {
 
 .link-clients:hover,
 .link-clients:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .clients-svg {
@@ -473,7 +487,7 @@ body {
 
 .network .social:hover,
 .network .social:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .footer-subscribe {
@@ -513,11 +527,6 @@ body {
 /* address */
 
 .address {
-  color: #fff;
-  font-style: normal;
-}
-
-.contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
@@ -565,7 +574,7 @@ body {
 .filter:hover,
 .filter:focus {
   color: #fff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* cards */
@@ -587,8 +596,12 @@ body {
   margin-right: 0;
 }
 
+.container-link {
+  text-decoration: none;
+}
+
 /* name */
 
 .name {
-  color: #212121;
+  color: var(--primary-text-color);
 }
